@@ -1,3 +1,11 @@
+@media (max-width: 800px){
+    .picture{
+        display: none;
+    }
+    .bottom {
+        flex-direction: column-reverse;
+    }
+}
 html{
     margin: 0;
     padding: 0;
@@ -23,15 +31,29 @@ body{
 .picture{
     flex: 1;
 }
-.name{
+.name_profession{
     flex: 4;
     padding-left: 20px;
     position: relative;
 }
+.name{
+    font-size: 20pt;
+}
+.profession{
+    color:cyan;
+}
 .contact_info{
     flex: 4;
     display: flex;
-    justify-content: flex-end;
+}
+@media (max-width: 800px){
+    .name_profession{
+        padding: 0;
+        margin: 0;
+    }
+    .contact_info{
+        padding-top: 10px;
+    }
 }
 .employment{
     margin-bottom: 40px;
@@ -73,7 +95,7 @@ body{
 .skill{
     display: flex;
     height: 18px;
-    width: 160px;
+    width: 100%;
 }
 .graphic_skills{
     list-style: square;
