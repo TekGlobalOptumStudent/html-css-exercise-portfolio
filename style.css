@@ -1,6 +1,7 @@
 html{
     margin: 0;
     padding: 0;
+    font-family: Arial, Helvetica, sans-serif;
 }
 body{
     width: 60%;
@@ -10,7 +11,7 @@ body{
     margin-left: auto;
     margin-right: auto;
 }
-ul{
+.categories ul, .details ul{
     list-style-type: none;
 }
 .info, .bottom, .entry_title{
@@ -63,10 +64,43 @@ ul{
 .programming_skills{
     display: flex;
     flex-direction: column;
-    justify-content: space-around;
+}
+.programming_skills > p{
+    font-size: 10pt;
+    margin-top: 5px;
+    margin-bottom: 5px;
 }
 .skill{
     display: flex;
-    height: 40x;
+    height: 18px;
     width: 160px;
+}
+.graphic_skills{
+    list-style: square;
+}
+.graphic_skills li{
+    margin-top: -10px;
+    font-size: 30px;
+}
+.graphic_skills li span{
+    margin-top: -10px;
+    font-size: 1rem;
+}
+.paint{
+    color:blue;
+}
+.paint_3d{
+    color:darkcyan;
+}
+.photoshop{
+    color:green;
+}
+.s_paint{
+    color:orange;
+}
+.krita{
+    color:red;
+}
+.paint span, .paint_3d span, .photoshop span, .s_paint span, .krita span{
+    color: white;
 }
