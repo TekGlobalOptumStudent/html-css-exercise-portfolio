@@ -11,7 +11,7 @@ body{
     margin-left: auto;
     margin-right: auto;
 }
-.categories ul, .details ul{
+.categories ul, .details ul, .language_skills{
     list-style-type: none;
 }
 .info, .bottom, .entry_title{
@@ -103,4 +103,51 @@ body{
 }
 .paint span, .paint_3d span, .photoshop span, .s_paint span, .krita span{
     color: white;
+}
+.language_skills{
+    padding: 0;
+}
+.language_skills li{
+    margin-bottom: 10px;
+}
+.language{
+    display: flex;
+    width: 200px;
+}
+.language_name{
+    text-align: left;
+    width: 40%;
+}
+.circles{
+    flex: 2;
+    display: flex;
+    width: 60%;
+}
+.circle-en{
+    height: 15px;
+    width: 15px;
+    border-radius: 50%;
+    background-color: darkcyan;
+    justify-content: flex-end;
+}
+.circle-sp{
+    height: 15px;
+    width: 15px;
+    border-radius: 50%;
+    background-color: green;
+    justify-content: flex-end;
+}
+.circle-it{
+    height: 15px;
+    width: 15px;
+    border-radius: 50%;
+    background-color: yellow;
+    justify-content: flex-end;
+}
+.circle{
+    height: 15px;
+    width: 15px;
+    border-radius: 50%;
+    background-color:black;
+    justify-content: flex-end;
 }
